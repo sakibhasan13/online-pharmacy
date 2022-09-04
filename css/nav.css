@@ -1,0 +1,96 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+:root {
+  --nabbar-height: 59px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+#logo {
+  margin: 10 50px;
+}
+
+#logo img {
+  padding: 5px;
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+#navbar ul {
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: #20837e;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 16px;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  background-color: rgb(255, 0, 0);
+  border-radius: 20px;
+  transition: all 0.7s ease;
+}
+
+#navbar .carticon {
+  margin-left: 300px;
+  font-weight: 100;
+}
+
+#navbar .profile {
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+.sub-menu {
+  display: none;
+}
+
+#navbar ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: #6de4de;
+}
+
+#navbar ul li:hover .sub-menu ul {
+  display: block;
+}
+
+#navbar ul li:hover .sub-menu ul li a {
+  width: auto;
+  padding: 10px;
+  margin-right: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#navbar i {
+  margin-left: 10px;
+}
